@@ -1,0 +1,17 @@
+Operating Systems — Sample Study Notes
+
+A system call is a controlled interface between a user application and the operating system kernel. Applications use system calls when they need privileged services such as reading a file, creating a process, or communicating with a device.
+
+Process management includes creating, scheduling, synchronizing, and terminating processes. A process is a program in execution, while a program is a passive set of instructions stored on disk.
+
+Virtual memory allows each process to operate in a logical address space that can be mapped to physical memory. Paging divides virtual memory into fixed-size pages and physical memory into frames. A page table records the mapping between virtual pages and physical frames.
+
+A context switch occurs when the operating system saves the state of one process or thread and restores the state of another. Context switching enables multitasking but introduces overhead because the CPU performs work that does not directly advance an application's task.
+
+Deadlock can occur when processes wait indefinitely for resources held by one another. The four classic conditions are mutual exclusion, hold and wait, no preemption, and circular wait. Breaking at least one necessary condition can prevent deadlock.
+
+A scheduling algorithm determines which ready process receives CPU time. First Come First Served uses arrival order, Shortest Job First prioritizes the shortest estimated burst, and Round Robin gives each process a bounded time quantum.
+
+The operating system manages files and directories through a file system. File permissions determine which users can read, write, or execute a file. Access control helps protect information from unauthorized use.
+
+Concurrency happens when multiple tasks make progress over overlapping periods. A race condition occurs when the result depends on the timing or ordering of concurrent operations. Locks and semaphores can coordinate access to shared resources.
